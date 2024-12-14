@@ -1,0 +1,509 @@
+wait(game.Players.LocalPlayer.Character)
+gui = Instance.new("ScreenGui")
+framePrincipal = Instance.new("Frame")
+frameGeral = Instance.new("Frame")
+cornerPrincipal = Instance.new("UICorner")
+botaoAbrir = Instance.new("TextButton")
+cornerSecundaria = Instance.new("UICorner")
+HiVNIsHere = Instance.new("TextLabel")
+VersionVN = Instance.new("TextLabel")
+Welcome = Instance.new("TextLabel")
+frameTudo = Instance.new("Frame")
+homeButton = Instance.new("TextButton")
+geralButton = Instance.new("TextButton")
+teleportButton = Instance.new("TextButton")
+giantButton = Instance.new("TextButton")
+botaoFechar = Instance.new("TextButton")
+definirTamanhoGigante = Instance.new("TextBox")
+tamanhoGigante = Instance.new("NumberValue")
+velocidadeButton = Instance.new("TextButton")
+definirVelocidade = Instance.new("TextBox")
+velocidadeValue = Instance.new("NumberValue")
+puloButton = Instance.new("TextButton")
+definirPulo = Instance.new("TextBox")
+puloValue = Instance.new("NumberValue")
+sentarButton = Instance.new("TextButton")
+flyButton = Instance.new("TextButton")
+noClipButton = Instance.new("TextButton")
+definirVoo = Instance.new("TextButton")
+definirVoo2 = Instance.new("TextButton")
+vooValue = Instance.new("TextLabel")
+estaticoButton = Instance.new("TextButton")
+paraDeVoar = Instance.new("TextButton")
+vnIsOn = Instance.new("Frame")
+vnIsOn2 = Instance.new("TextLabel")
+--Funcs
+wait(0.1)
+--Frame
+framePrincipal.Size = UDim2.new(0.95, 0, 0.95, 0)
+framePrincipal.Position = UDim2.new(0.025, 0, 0, 0)
+framePrincipal.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+framePrincipal.BackgroundTransparency = 0.1
+framePrincipal.Name = "Frame Principal"
+framePrincipal.Parent = frameTudo
+cornerPrincipal.CornerRadius = UDim.new(0.04, 0)
+cornerPrincipal.Parent = framePrincipal
+--Frame tudo
+frameTudo.Size = UDim2.new(1, 1, 1, 1)
+frameTudo.Parent = gui
+frameTudo.BackgroundTransparency = 1
+frameTudo.Visible = false
+--Botão Abrir
+botaoAbrir.Name = "Abre"
+botaoAbrir.Size = UDim2.new(0.045, 0,0.09, 0)
+botaoAbrir.Text = "VN"
+botaoAbrir.TextColor3 = Color3.fromRGB(255, 255, 255)
+botaoAbrir.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+botaoAbrir.Position = UDim2.new(0.82, 0, 0.02, 0)
+botaoAbrir.TextScaled = true
+botaoAbrir.Parent = gui
+botaoAbrir.Font = Enum.Font.Fondamento
+cornerSecundaria.CornerRadius = UDim.new(0.2, 0)
+cornerSecundaria.Parent = botaoAbrir
+-- VN is here
+HiVNIsHere.Parent = framePrincipal
+HiVNIsHere.Name = "HiVNIsHere"
+HiVNIsHere.Text = "Hi, the new VN HUB is here!"
+HiVNIsHere.TextScaled = true
+HiVNIsHere.Font = Enum.Font.FredokaOne
+HiVNIsHere.BackgroundTransparency = 1
+HiVNIsHere.TextColor3 = Color3.fromRGB(255, 255, 255)
+HiVNIsHere.Size = UDim2.new(0.631, 0,0.093, 0)
+HiVNIsHere.Position = UDim2.new(0.252, 0,0, 0)
+--VN Version
+VersionVN.Parent = framePrincipal
+VersionVN.Name = "VNVersion"
+VersionVN.Text = "Version 0.4"
+VersionVN.TextScaled = true
+VersionVN.Font = Enum.Font.FredokaOne
+VersionVN.BackgroundTransparency = 1
+VersionVN.TextColor3 = Color3.fromRGB(255, 255, 255)
+VersionVN.Size = UDim2.new(0.631, 0,0.093, 0)
+VersionVN.Position = UDim2.new(0.252, 0,0.133, 0)
+--Welcome
+Welcome.Parent = framePrincipal
+Welcome.Name = "Welcome"
+Welcome.Text = "山乇ㄥ匚ㄖ爪乇"
+Welcome.TextScaled = true
+Welcome.BackgroundTransparency = 1
+Welcome.TextColor3 = Color3.fromRGB(255, 255, 255)
+Welcome.Size = UDim2.new(0.631, 0,0.093, 0)
+Welcome.Position = UDim2.new(0.252, 0,0.266, 0)
+--Botão home
+homeButton.Name = "Home"
+homeButton.Size = UDim2.new(0.12, 0,0.063, 0)
+homeButton.Text = "Home"
+homeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+homeButton.BackgroundTransparency = 1
+homeButton.Position = UDim2.new(0.035, 0,0.02, 0)
+homeButton.TextScaled = true
+homeButton.Parent = gui
+homeButton.Visible = false
+homeButton.Font = Enum.Font.Arcade
+--Botão geral
+geralButton.Name = "Geral"
+geralButton.Size = UDim2.new(0.12, 0,0.063, 0)
+geralButton.Text = "Geral"
+geralButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+geralButton.BackgroundTransparency = 1
+geralButton.Position = UDim2.new(0.035, 0,0.1, 0)
+geralButton.TextScaled = true
+geralButton.Parent = gui
+geralButton.Visible = false
+geralButton.Font = Enum.Font.Arcade
+-- Botão de teleport
+teleportButton.Name = "Teleport"
+teleportButton.Size = UDim2.new(0.12, 0,0.063, 0)
+teleportButton.Text = "Teleport"
+teleportButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+teleportButton.BackgroundTransparency = 1
+teleportButton.Position = UDim2.new(0.035, 0,0.18, 0)
+teleportButton.TextScaled = true
+teleportButton.Parent = gui
+teleportButton.Visible = false
+teleportButton.Font = Enum.Font.Arcade
+--Frame geral
+frameGeral.Size = UDim2.new(0.95, 0, 0.95, 0)
+frameGeral.Position = UDim2.new(0.025, 0, 0, 0)
+frameGeral.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+frameGeral.BackgroundTransparency = 0.1
+frameGeral.Name = "Frame Geral"
+frameGeral.Parent = frameTudo
+frameGeral.Visible = false
+cornerPrincipal:Clone().Parent = frameGeral
+--Mudar tamanho button
+giantButton.Name = "Mudar o tamanho"
+giantButton.Size = UDim2.new(0.375, 0,0.141, 0)
+giantButton.Text = "Mude seu tamanho"
+giantButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+giantButton.BackgroundTransparency = 1
+giantButton.Position = UDim2.new(0.281, 0,0, 0)
+giantButton.TextScaled = true
+giantButton.Parent = frameGeral
+giantButton.Visible = true
+giantButton.Font = Enum.Font.Arcade
+--Botão fechar
+botaoFechar.Name = "Fecha"
+botaoFechar.Size = UDim2.new(0.045, 0,0.09, 0)
+botaoFechar.Text = "VN"
+botaoFechar.TextColor3 = Color3.fromRGB(255, 255, 255)
+botaoFechar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+botaoFechar.Position = UDim2.new(0.82, 0, 0.02, 0)
+botaoFechar.TextScaled = true
+botaoFechar.Parent = gui
+botaoFechar.Font = Enum.Font.Fondamento
+botaoFechar.Visible = false
+cornerSecundaria.CornerRadius = UDim.new(0.2, 0)
+cornerSecundaria:Clone().Parent = botaoFechar
+--Tamanho gigante
+definirTamanhoGigante.Name = "Tamanho"
+definirTamanhoGigante.Size = UDim2.new(0.094, 0,0.141, 0)
+definirTamanhoGigante.Text = "Digite aqui o tamanho"
+definirTamanhoGigante.TextColor3 = Color3.fromRGB(255, 255, 255)
+definirTamanhoGigante.BackgroundTransparency = 1
+definirTamanhoGigante.Position = UDim2.new(0.7, 0,0, 0)
+definirTamanhoGigante.TextScaled = true
+definirTamanhoGigante.Parent = frameGeral
+definirTamanhoGigante.Font = Enum.Font.Arcade
+--Mudar velocidade button
+velocidadeButton.Name = "Mudar a velocidade"
+velocidadeButton.Size = UDim2.new(0.375, 0,0.141, 0)
+velocidadeButton.Text = "Mude sua velocidade"
+velocidadeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+velocidadeButton.BackgroundTransparency = 1
+velocidadeButton.Position = UDim2.new(0.281, 0, 0.15, 0)
+velocidadeButton.TextScaled = true
+velocidadeButton.Parent = frameGeral
+velocidadeButton.Visible = true
+velocidadeButton.Font = Enum.Font.Arcade
+--Velocidade
+definirVelocidade.Name = "Velocidade"
+definirVelocidade.Text = "Digite aqui a velocidade"
+definirVelocidade.TextColor3 = Color3.fromRGB(255, 255, 255)
+definirVelocidade.BackgroundTransparency = 1
+definirVelocidade.Position = UDim2.new(0.7, 0, 0.15, 0)
+definirVelocidade.TextScaled = true
+definirVelocidade.Parent = frameGeral
+definirVelocidade.Font = Enum.Font.Arcade
+definirVelocidade.Size = UDim2.new(0.094, 0,0.141, 0)
+--Mudar pulo button
+puloButton.Name = "Mudar o pulo"
+puloButton.Size = UDim2.new(0.375, 0,0.141, 0)
+puloButton.Text = "Mude seu pulo"
+puloButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+puloButton.BackgroundTransparency = 1
+puloButton.Position = UDim2.new(0.281, 0, 0.30, 0)
+puloButton.TextScaled = true
+puloButton.Parent = frameGeral
+puloButton.Visible = true
+puloButton.Font = Enum.Font.Arcade
+--Pulo
+definirPulo.Name = "Pulo"
+definirPulo.Text = "Digite aqui o pulo"
+definirPulo.TextColor3 = Color3.fromRGB(255, 255, 255)
+definirPulo.BackgroundTransparency = 1
+definirPulo.Position = UDim2.new(0.7, 0, 0.30, 0)
+definirPulo.TextScaled = true
+definirPulo.Parent = frameGeral
+definirPulo.Font = Enum.Font.Arcade
+definirPulo.Size = UDim2.new(0.094, 0,0.141, 0)
+--Sentar button
+sentarButton.Name = "Sentar"
+sentarButton.Size = UDim2.new(0.375, 0,0.141, 0)
+sentarButton.Text = "Sente-se"
+sentarButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+sentarButton.BackgroundTransparency = 1
+sentarButton.Position = UDim2.new(0.281, 0, 0.45, 0)
+sentarButton.TextScaled = true
+sentarButton.Parent = frameGeral
+sentarButton.Visible = true
+sentarButton.Font = Enum.Font.Arcade
+--Fly button
+flyButton.Name = "Voar"
+flyButton.Size = UDim2.new(0.375, 0,0.141, 0)
+flyButton.Text = "Começe a voar"
+flyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+flyButton.BackgroundTransparency = 1
+flyButton.Position = UDim2.new(0.281, 0, 0.60, 0)
+flyButton.TextScaled = true
+flyButton.Parent = frameGeral
+flyButton.Visible = true
+flyButton.Font = Enum.Font.Arcade
+--Voo
+definirVoo.Name = "Voo"
+definirVoo.Text = "+5"
+definirVoo.TextColor3 = Color3.fromRGB(255, 255, 255)
+definirVoo.BackgroundTransparency = 1
+definirVoo.Position = UDim2.new(0.7, 0, 0.6, 0)
+definirVoo.TextScaled = true
+definirVoo.Parent = frameGeral
+definirVoo.Font = Enum.Font.Arcade
+definirVoo.Size = UDim2.new(0.094, 0,0.141, 0)
+
+definirVoo2.Name = "Voo"
+definirVoo2.Text = "-5"
+definirVoo2.TextColor3 = Color3.fromRGB(255, 255, 255)
+definirVoo2.BackgroundTransparency = 1
+definirVoo2.Position = UDim2.new(0.8, 0, 0.6, 0)
+definirVoo2.TextScaled = true
+definirVoo2.Parent = frameGeral
+definirVoo2.Font = Enum.Font.Arcade
+definirVoo2.Size = UDim2.new(0.094, 0,0.141, 0)
+--Voo value
+vooValue.Name = "Voo"
+vooValue.Text = ""
+vooValue.TextColor3 = Color3.fromRGB(255, 255, 255)
+vooValue.BackgroundTransparency = 1
+vooValue.Position = UDim2.new(0.75, 0, 0.75, 0)
+vooValue.TextScaled = true
+vooValue.Parent = frameGeral
+vooValue.Font = Enum.Font.Arcade
+vooValue.Size = UDim2.new(0.094, 0,0.141, 0)
+--Para de voar
+paraDeVoar.Name = "Paradevoar"
+paraDeVoar.Size = UDim2.new(0.045, 0,0.09, 0)
+paraDeVoar.Text = "parar"
+paraDeVoar.TextColor3 = Color3.fromRGB(255, 255, 255)
+paraDeVoar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+paraDeVoar.Position = UDim2.new(0.82, 0, 0.15, 0)
+paraDeVoar.TextScaled = true
+paraDeVoar.Parent = gui
+paraDeVoar.Font = Enum.Font.FredokaOne
+paraDeVoar.Visible = false
+cornerSecundaria.CornerRadius = UDim.new(0.2, 0)
+cornerSecundaria:Clone().Parent = paraDeVoar
+--Parar no ar
+estaticoButton.Name = "Estatico"
+estaticoButton.Size = UDim2.new(0.045, 0,0.09, 0)
+estaticoButton.Text = "Flutuar (Tab)"
+estaticoButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+estaticoButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+estaticoButton.Position = UDim2.new(0.82, 0, 0.28, 0)
+estaticoButton.TextScaled = true
+estaticoButton.Parent = gui
+estaticoButton.Font = Enum.Font.FredokaOne
+estaticoButton.Visible = false
+cornerSecundaria.CornerRadius = UDim.new(0.2, 0)
+cornerSecundaria:Clone().Parent = estaticoButton
+--No clip
+noClipButton.Name = "noClip"
+noClipButton.Size = UDim2.new(0.375, 0,0.141, 0)
+noClipButton.Text = "NoClip (Durante voo)"
+noClipButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+noClipButton.BackgroundTransparency = 1
+noClipButton.Position = UDim2.new(0.281, 0, 0.75, 0)
+noClipButton.TextScaled = true
+noClipButton.Parent = frameGeral
+noClipButton.Visible = true
+noClipButton.Font = Enum.Font.Arcade
+--vnIsOn
+vnIsOn.Size = UDim2.new(0.18, 0,0.101, 0)
+vnIsOn.Position = UDim2.new(0.803, 0,0.865, 0)
+vnIsOn.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+vnIsOn.BackgroundTransparency = 0.2
+vnIsOn.Name = "vnIsOn"
+vnIsOn.Parent = gui
+vnIsOn.Visible = true
+cornerdaq = cornerPrincipal:Clone()
+cornerdaq.CornerRadius = UDim.new(0.3, 0)
+cornerdaq.Parent = vnIsOn
+--vnIsOn2
+vnIsOn2.Name = "vnIsOn2"
+vnIsOn2.Size = UDim2.new(0.18, 0,0.101, 0)
+vnIsOn2.Text = "VN is on!"
+vnIsOn2.TextColor3 = Color3.fromRGB(255, 255, 255)
+vnIsOn2.BackgroundTransparency = 1
+vnIsOn2.Position = UDim2.new(0.803, 0,0.865, 0)
+vnIsOn2.TextScaled = true
+vnIsOn2.Parent = gui
+vnIsOn2.Visible = true
+vnIsOn2.Font = Enum.Font.Arcade
+--Voo script
+wait(0.01)
+gui.Parent = game.Players.LocalPlayer.PlayerGui
+gui.Name = "VN HUB"
+gui.ResetOnSpawn = true
+
+
+--Abrir e fechar
+botaoAbrir.MouseButton1Click:Connect(function()
+	frameTudo.Visible = true
+	botaoFechar.Visible = true
+	botaoAbrir.Visible = false
+	homeButton.Visible = true
+	geralButton.Visible = true
+	teleportButton.Visible = true
+end)
+botaoFechar.MouseButton1Click:Connect(function()
+	frameTudo.Visible = false
+	botaoFechar.Visible = false
+	botaoAbrir.Visible = true
+	homeButton.Visible = false
+	geralButton.Visible = false
+	teleportButton.Visible = false
+end)
+homeButton.MouseButton1Click:Connect(function()
+	framePrincipal.Visible = true
+	frameGeral.Visible = false
+end)
+geralButton.MouseButton1Click:Connect(function()
+	framePrincipal.Visible = false
+	frameGeral.Visible = true
+end)
+giantButton.MouseButton1Click:Connect(function()
+	tamanhoGigante.Value = definirTamanhoGigante.Text
+	wait(0.001)
+	game.Players.LocalPlayer.Character:ScaleTo(tamanhoGigante.Value)
+	game.Players.LocalPlayer.Character.Humanoid.JumpHeight = 7.2
+end)
+velocidadeButton.MouseButton1Click:Connect(function()
+	velocidadeValue.Value = definirVelocidade.Text
+	wait(0.001)
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = velocidadeValue.Value
+end)
+puloButton.MouseButton1Click:Connect(function()
+	puloValue.Value = definirPulo.Text
+	wait(0.001)
+	game.Players.LocalPlayer.Character.Humanoid.JumpHeight = puloValue.Value
+end)
+sentarButton.MouseButton1Click:Connect(function(plr)
+	game.Players.LocalPlayer.Character.Humanoid.Sit = true
+end)
+
+local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+local userInputService = game:GetService("UserInputService")
+local button = flyButton
+local button2 = paraDeVoar
+
+local Torso = character:FindFirstChild("UpperTorso")
+local Torso2 = character:FindFirstChild("LowerTorso")
+local Root = character:WaitForChild("HumanoidRootPart")
+-- Configurações do voo
+local isFlying = false
+local flightSpeed = 100
+local targetPosition = humanoidRootPart.Position
+local isMoving = false
+
+-- Variáveis para controle do double click de espaço
+local spacePressed = 0
+local lastSpaceTime = 0
+local doubleClickThreshold = 0.3
+
+-- Função para ativar/desativar o voo
+local function toggleFlight()
+	isFlying = not isFlying
+	isMoving = false -- Para o movimento quando desativar o voo
+	if isFlying then
+		humanoid.PlatformStand = true
+	else
+		humanoid.PlatformStand = false
+	end
+end
+
+-- Função para mover o jogador até o ponto de destino
+local function moveToTarget()
+	if isFlying and not isMoving then
+		isMoving = true
+		while isFlying and (humanoidRootPart.Position - targetPosition).Magnitude > 2 do
+			local direction = (targetPosition - humanoidRootPart.Position).unit
+			local velocity = direction * flightSpeed
+			humanoidRootPart.Velocity = velocity
+			wait(0.1) -- Ajuste a velocidade de movimento
+		end
+		-- Quando o destino for alcançado, parar o movimento
+		humanoidRootPart.Velocity = Vector3.new(0, 0, 0)
+		isMoving = false
+	end
+end
+vooValue.Text = flightSpeed
+-- Detecta os cliques do mouse e define o destino
+mouse.Button1Down:Connect(function()
+	if isFlying then
+		targetPosition = mouse.Hit.p -- Define o novo destino para o local do clique
+		moveToTarget() -- Começa a movimentação para o destino
+	end
+end)
+local Estatico = false
+-- Função para detectar o double click do espaço
+local function onSpacePressed(input)
+	if input.KeyCode == Enum.KeyCode.Space then
+		local currentTime = tick()
+
+		-- Detecta o double click de espaço
+		if currentTime - lastSpaceTime < doubleClickThreshold then
+			-- Para o voo ao pressionar espaço duas vezes
+			if isFlying then
+				flyButton.Text = "Começe a voar"
+				toggleFlight()
+				paraDeVoar.Visible = false
+				estaticoButton.Visible = false
+			end
+		end
+
+		lastSpaceTime = currentTime
+	end
+end
+
+
+-- Conecta o evento do teclado para detectar o espaço
+userInputService.InputBegan:Connect(onSpacePressed)
+
+-- Função para ativar o voo ao clicar no botão
+definirVoo.MouseButton1Click:Connect(function()
+	flightSpeed = flightSpeed + 5
+	vooValue.Text = flightSpeed
+end)
+definirVoo2.MouseButton1Click:Connect(function()
+	flightSpeed = flightSpeed - 5
+	vooValue.Text = flightSpeed
+end)
+Podevoar = false
+button.MouseButton1Click:Connect(function()
+	toggleFlight() -- Alterna o estado do voo ao clicar no botão
+	flyButton.Text = "Clique espaço duas vezes para parar"
+	button2.Visible = not button2.Visible
+	estaticoButton.Visible = not estaticoButton.Visible
+	Podevoar = not Podevoar
+	noClipButton.MouseButton1Click:Connect(function()
+		Torso.CanCollide = not Torso.CanCollide
+		Torso2.CanCollide = not Torso2.CanCollide
+		Root.CanCollide = not Root.CanCollide
+	end)
+	estaticoButton.MouseButton1Click:Connect(function()
+		Root.Anchored = not Root.Anchored
+	end)
+	userInputService.InputBegan:Connect(function(input)
+		if input.KeyCode == Enum.KeyCode.Tab and Podevoar == true then
+			Root.Anchored = not Root.Anchored
+		end
+	end)
+end)
+button2.MouseButton1Click:Connect(function()
+	toggleFlight() -- Alterna o estado do voo ao clicar no botão
+	flyButton.Text = "Começe a voar"
+	button2.Visible = not button.Visible
+	estaticoButton.Visible = not estaticoButton.Visible
+	Podevoar = not Podevoar
+	noClipButton.MouseButton1Click:Connect(function()
+		Torso.CanCollide = not Torso.CanCollide
+		Torso2.CanCollide = not Torso2.CanCollide
+		Root.CanCollide = not Root.CanCollide
+	end)
+	estaticoButton.MouseButton1Click:Connect(function()
+		Root.Anchored = not Root.Anchored
+	end)
+	userInputService.InputBegan:Connect(function(input)
+		if input.KeyCode == Enum.KeyCode.Tab and Podevoar == true then
+			Root.Anchored = not Root.Anchored
+		end
+	end)
+end)
+
+
+wait(5)
+vnIsOn.Visible = false
+vnIsOn2.Visible = false
