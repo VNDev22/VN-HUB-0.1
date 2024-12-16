@@ -544,7 +544,6 @@ botaoAbrir.MouseButton1Click:Connect(function()
 end)
 botaoFechar.MouseButton1Click:Connect(function()
 	frameTudo.Visible = false
-	teleportFrame.Visible = false
 	botaoFechar.Visible = false
 	botaoAbrir.Visible = true
 	homeButton.Visible = false
